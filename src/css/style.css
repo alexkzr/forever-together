@@ -35,8 +35,21 @@
             list-style: none;
             margin-right: 40px; }
             .main .container .header nav ul li a {
+              display: block;
               text-decoration: none;
-              color: #ffffff; }
+              color: #ffffff;
+              padding-bottom: 10px; }
+          .main .container .header nav ul li::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #fa7995;
+            -webkit-transition: width .3s;
+            -o-transition: width .3s;
+            transition: width .3s; }
+          .main .container .header nav ul li:hover::after {
+            width: 100%; }
           .main .container .header nav ul .login {
             display: block;
             width: 110px;
