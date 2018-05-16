@@ -1,0 +1,19 @@
+{
+  "name": "forto",
+  "version": "1.0.0",
+  "description": "forever together website ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/askkozy/forever-together.git"
+  },
+  "author": "AS Kozyrev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/askkozy/forever-together/issues"
+  },
+  "homepage": "https://github.com/askkozy/forever-together#readme"
+}
