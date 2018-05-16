@@ -9,52 +9,55 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
-
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Forever Together</title>
 </head>
 
 <body>
   <section class="main">
-    <div class="header">
-      <div class="logo"></div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#video">Видео</a>
-          </li>
-          <li>
-            <a href="#tools">Инструменты сайта</a>
-          </li>
-          <li>
-            <a href="#examples">Примеры сайтов</a>
-          </li>
-          <li>
-            <a href="#prices">Цены</a>
-          </li>
-          <li>
-            <a href="#about">О нас</a>
-          </li>
-          <li>
-            <a href="#contacts">Контакты</a>
-          </li>
-          <li>
-            <a href="#login">Войти</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="main-content">
-      <img src="img/main/scroll.png" alt="">
-      <h1 class="main-content__heading">Начните свадьбу со своего сайта!</h1>
-      <!-- /.main-content__heading -->
-      <img src="img/main/separator.png" alt="" class="main-content__line">
-      <p class="main-content__paragraph1">У вас свадьба и вы хотите создать сайт для этого особого случая?</p>
-      <!-- /.main-content__paragraph1 -->
-      <p class="main-content__paragraph2">С Forever Together создать сайт это не проблема. Вы можете быстро и бесплатно создать свадебный сайт и делиться впечатлениями
-        с родными друзьями.</p>
-      <!-- /.main-content__paragraph2 -->
-      <button class="button">СОЗДАТЬ САЙТ</button>
-      <!-- /.button -->
+    <div class="container">
+      <div class="header">
+        <div class="logo"></div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#video">Видео</a>
+            </li>
+            <li>
+              <a href="#tools">Инструменты сайта</a>
+            </li>
+            <li>
+              <a href="#examples">Примеры сайтов</a>
+            </li>
+            <li>
+              <a href="#prices">Цены</a>
+            </li>
+            <li>
+              <a href="#about">О нас</a>
+            </li>
+            <li>
+              <a href="#contacts">Контакты</a>
+            </li>
+            <li class="login">
+              <a href="#login">Войти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-content">
+        <h1 class="main-content__heading">Начните свадьбу со своего сайта!</h1>
+        <!-- /.main-content__heading -->
+        <img src="img/main/separator.png" alt="" class="main-content__line">
+        <p class="main-content__paragraph1">У вас свадьба и вы хотите создать сайт для этого особого случая?</p>
+        <!-- /.main-content__paragraph1 -->
+        <p class="main-content__paragraph2">С Forever Together создать сайт это не проблема. Вы можете быстро и бесплатно создать свадебный сайт и делиться впечатлениями
+          с родными друзьями.</p>
+        <!-- /.main-content__paragraph2 -->
+        <button class="button">СОЗДАТЬ САЙТ</button>
+        <!-- /.button -->
+        <img src="img/main/scroll.png" alt="">
+      </div>
     </div>
     <!-- /.main-content -->
   </section>
@@ -96,6 +99,8 @@
           <div class="tools-content__heading">Изменение дизайна</div>
           <p class="tools-content__text">Выбирайте из множества шаблонов или создайте свой собственный дизайн</p>
         </div>
+      </div>
+      <div class="row">
         <div class="tool5 col-6 col-md-3">
           <img src="img/tools/tool5.png" alt="">
           <div class="tools-content__heading">Видеовиджет</div>
@@ -168,10 +173,10 @@
               <li>Карта проезда</li>
               <li>История пары</li>
               <liДресс-код</li>
-              <li>Программа дня</li>
-              <li>50 фотографий в альбоме пары</li>
-              <p class="price-tag">1 600 рублей</p>
-              <button class="button button-grey">Создать сайт за 1600р.</button>
+                <li>Программа дня</li>
+                <li>50 фотографий в альбоме пары</li>
+                <p class="price-tag">1 600 рублей</p>
+                <button class="button button-grey">Создать сайт за 1600р.</button>
             </ul>
           </div>
           <div class="price price2">
@@ -221,11 +226,14 @@
     <div class="about-content_wrapper">
       <div class="about-content">
         <p class="about-text__heading">Собирайте сайт из блоков</p>
-        <p class="about-text__text">В библиотеке вы выбираете понравившиеся блоки из более 44 вариантов и собираете из них страницы. По своему вкусу и желанию вы можете компоновать их так, как вам захочется и покажется оптимальным для вашей тематики</p>
+        <p class="about-text__text">В библиотеке вы выбираете понравившиеся блоки из более 44 вариантов и собираете из них страницы. По своему вкусу
+          и желанию вы можете компоновать их так, как вам захочется и покажется оптимальным для вашей тематики</p>
       </div>
       <div class="about-content">
         <p class="about-text__heading">Выбирайте из множества вариантов качественного дизайна</p>
-        <p class="about-text__text">Мы предлагаем всевохможные варианты полноэкранных обложек, фотогалерей, кнопок, типографики, фоновых видео, цитат, меню и многих других элементов. От вас лишь требуется хороший вкус, чтобы гармонично соединить содержимое. При этом вы всегда можете изменить с помощью настроек дизайн выбранного блока.</p>
+        <p class="about-text__text">Мы предлагаем всевохможные варианты полноэкранных обложек, фотогалерей, кнопок, типографики, фоновых видео, цитат,
+          меню и многих других элементов. От вас лишь требуется хороший вкус, чтобы гармонично соединить содержимое. При
+          этом вы всегда можете изменить с помощью настроек дизайн выбранного блока.</p>
       </div>
     </div>
   </section>

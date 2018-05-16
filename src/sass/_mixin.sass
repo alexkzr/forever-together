@@ -1,0 +1,20 @@
+
+// add/remove margins
+@mixin push--ends($spacing: $spacing-unit) { margin: { top: $spacing; bottom: $spacing; } }
+@mixin push--sides($spacing: $spacing-unit) { margin: { left: $spacing; right: $spacing; } }
+@mixin push--auto { margin: { left: auto; right: auto; } }
+@mixin offset--sides($spacing: $spacing-unit) { margin: { left: -$spacing; right: -$spacing; } }
+@mixin flush--ends { margin: { top: 0; bottom: 0; } }
+@mixin flush--sides { margin: { left: 0; right: 0; } }
+
+// add/remove paddings
+@mixin soft--ends($spacing: $spacing-unit) { padding: { top: $spacing; bottom: $spacing; } }
+@mixin soft--sides($spacing: $spacing-unit) { padding: { left: $spacing; right: $spacing; } }
+@mixin hard--ends { padding: { top: 0; bottom: 0; } }
+@mixin hard--sides { padding: { left: 0; right: 0; } }
+@mixin cf 
+	&::after 
+		content: ''
+		display: table
+		clear: both
+	
