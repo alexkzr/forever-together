@@ -9,7 +9,6 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Forever Together</title>
 </head>
@@ -54,9 +53,11 @@
         <p class="main-content__paragraph2">С Forever Together создать сайт это не проблема. Вы можете быстро и бесплатно создать свадебный сайт и делиться впечатлениями
           с родными друзьями.</p>
         <!-- /.main-content__paragraph2 -->
-        <button class="button">СОЗДАТЬ САЙТ</button>
+        <button class="button button-main">СОЗДАТЬ САЙТ</button>
         <!-- /.button -->
-        <img src="img/main/scroll.png" alt="">
+        <a href="#video">
+          <img src="img/main/scroll.png" alt="" class="main-content__scroll">
+        </a>
       </div>
     </div>
     <!-- /.main-content -->
@@ -66,10 +67,15 @@
       <div class="h3 section-heading">Посмотрите видео о наших возможностях</div>
       <div class="p section-text">В этом видео мы подробно расскажем Вам как просто сделать в нашем конструкторе потрясающий сайт для Вашей свадьбы</div>
     </div>
-    <div class="video-content">
-      <img src="img/video/doves.png" alt="" class="video-content__image1">
-      <div class="video"></div>
-      <img src="img/video/doves.png" alt="" class="video-content__image2">
+    <div class="container">
+      <div class="video-content">
+        <img src="img/video/doves.png" alt="" class="video-content__image1">
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/scMrchfSioE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <img src="img/video/doves.png" alt="" class="video-content__image2">
+      </div>
     </div>
   </section>
   <section class="tools" id="tools">
@@ -290,10 +296,11 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>
