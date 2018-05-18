@@ -1,0 +1,64 @@
+#menu-button {
+  width: 50px;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  transition: all linear .3s;
+  padding: 2px;
+  z-index: 1;
+}
+
+#line-1,
+#line-2,
+#line-3 {
+  width: 90%;
+  background: #fa7995;
+  height: 6px;
+  margin: 8px auto;
+  border-radius: 2px;
+  transition: all linear .3s;
+}
+
+#line-1.active {
+  -webkit-transform: translate(0px, 12px) rotate(45deg);
+  transform: translate(0px, 12px) rotate(45deg);
+  background-color: #fa7995
+}
+
+#line-2.active {
+  opacity: 0;
+  background-color: #fa7995
+}
+
+#line-3.active {
+  -webkit-transform: translate(0px, -12px) rotate(-45deg);
+  transform: translate(0px, -12px) rotate(-45deg);
+  background-color: #fa7995
+}
+
+#menu {
+  background: rgba(255, 255, 255, .9);
+  width: 200px;
+  padding: 5px;
+  padding-top: 30px;
+  color: #fa7995;
+  font-family: arial;
+  font-size: 1.5rem;
+  display: none;
+  position: absolute;
+  top: 8px;
+  border-radius: 5px;
+}
+
+#menu ul {
+  list-style: none;
+}
+
+#menu ul li {
+  margin: 8px 0;
+}
+
+#menu ul li a {
+  color: #fa7995;
+  text-decoration: none;
+}

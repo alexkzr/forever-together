@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  $(document).ready(function() {
+  $(document).ready(function () {
     // Add smooth scrolling to all links
-    $('a').on('click', function(event) {
+    $('a').on('click', function (event) {
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== '') {
         // Prevent default anchor click behavior
@@ -12,23 +12,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate(
-          {
+        $('html, body').animate({
             scrollTop: $(hash).offset().top
           },
           800,
-          function() {
+          function () {
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           }
         );
       } // End if
     });
-  }); /*
-  $('.popup-form__input').mask('+7(999)999-9999');
-  $('.production-form__tel').mask('+7(999)999-9999');
-  $('.main-form__tel').mask('+7(999)999-9999');*/
+  });
+  /*
+   $('.popup-form__input').mask('+7(999)999-9999');
+   $('.production-form__tel').mask('+7(999)999-9999');
+   $('.main-form__tel').mask('+7(999)999-9999');*/
   /* Feedback slider */
 
   /*Input mask*/
+
+  $("#menu-button").click(function () {
+    $(this).toggleClass("active");
+    $("#line-1").toggleClass("active");
+    $("#line-2").toggleClass("active");
+    $("#line-3").toggleClass("active");
+    $("#menu").slideToggle("slow");
+  });
 });

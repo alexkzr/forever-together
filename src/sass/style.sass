@@ -10,6 +10,8 @@
 @import 'about'
 @import 'contacts'
 @import 'footer'
+.tools, .examples, .prices, .about, .contacts, .footer
+  display: none
 *
   margin: 0 auto
   box-sizing: border-box
@@ -32,6 +34,8 @@ section
   font-weight: bold
   font-size: 28px
   text-align: center
+  @include mq($until: 576px)
+    font-size: 24px
 .section-heading::after
   display: block
   content: ''
@@ -51,6 +55,8 @@ section
   padding-top: 0
   margin-bottom: 45px
   width: 46%
+  @include mq($until: 576px)
+    width: 75%
 .button
   box-shadow: 0 0 27px rgba(250, 122, 149, 0.36)
   background-color: #fa7a95
