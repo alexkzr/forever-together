@@ -259,6 +259,7 @@
       margin-left: 15px;
       margin-right: 15px;
       color: #525252;
+      background-color: #ffffff;
       font-size: 16px;
       font-family: "Proxima Nova Bold", sans-serif;
       font-weight: 400; }
@@ -344,39 +345,40 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .contacts .form-container form {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -ms-flex-pack: distribute;
-      justify-content: space-around; }
-    .contacts .form-container .name-input, .contacts .form-container .email-input {
+  .contacts form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .contacts form .name-input, .contacts form .email-input {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       margin-right: 25px; }
-      .contacts .form-container .name-input label, .contacts .form-container .email-input label {
+      .contacts form .name-input label, .contacts form .email-input label {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         background: #fff;
         border: 1px solid #ededed;
         border-right: 0;
-        width: 220px;
+        width: 150px;
         height: 50px;
         line-height: 50px;
-        padding-right: 15px; }
-        .contacts .form-container .name-input label img, .contacts .form-container .email-input label img {
+        padding-right: 15px;
+        font-size: 15px;
+        font-weight: 300;
+        font-family: "ProximaNova-Light", sans-serif; }
+        .contacts form .name-input label img, .contacts form .email-input label img {
           height: 20px;
           width: 20px;
           margin: 15px; }
-      .contacts .form-container .name-input #name, .contacts .form-container .name-input #email, .contacts .form-container .email-input #name, .contacts .form-container .email-input #email {
+      .contacts form .name-input #name, .contacts form .name-input #email, .contacts form .email-input #name, .contacts form .email-input #email {
         border-left: 0; }
-    .contacts .form-container .form-wrapper {
+    .contacts form .form-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -384,7 +386,7 @@
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
-    .contacts .form-container .asterisk {
+    .contacts form .asterisk {
       opacity: 0.6;
       color: #606060;
       font-size: 14px;
@@ -410,7 +412,10 @@
       border: 1px solid #ededed;
       border-bottom: 0;
       text-align: left;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      font-size: 15px;
+      font-weight: 300;
+      font-family: "ProximaNova-Light", sans-serif; }
       .contacts .textarea-wrap label img {
         height: 20px;
         width: 20px;
@@ -421,9 +426,8 @@
       border: 1px solid #ededed;
       border-top: 0;
       padding-left: 20px; }
-    .contacts .textarea-wrap .submit-button {
-      margin-left: auto;
-      margin-right: auto; }
+  .contacts .submit-button {
+    margin-bottom: 50px; }
   .contacts .social {
     margin-left: auto;
     margin-right: auto; }
@@ -432,17 +436,82 @@
     font-family: "Proxima Nova Bold", sans-serif;
     font-size: 21px;
     font-weight: 200;
-    line-height: 20.99px; }
+    line-height: 20.99px;
+    margin-bottom: 30px; }
   .contacts .social-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    .contacts .social-links .fb {
+      background: #21579f; }
+    .contacts .social-links .vk {
+      background: #4c77a4; }
+    .contacts .social-links .ok {
+      background: #f68529; }
+    .contacts .social-links .inst {
+      background: #943ba7; }
+    .contacts .social-links .yout {
+      background: #e61f19; }
+    .contacts .social-links .fb, .contacts .social-links .vk, .contacts .social-links .inst, .contacts .social-links .ok, .contacts .social-links .yout {
+      color: #ffffff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 3px;
+      border-radius: 5px;
+      line-height: 50px;
+      padding-right: 23px; }
+    .contacts .social-links img {
+      padding: 9px;
+      border-right: 1px solid rgba(255, 255, 255, 0.4);
+      margin-right: 17px; }
+
+.footer {
+  background: #333333;
+  background-image: url(../img/contacts/footer-bg) no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .footer .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+    width: 77%; }
+    .footer .footer-nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 0; }
+      .footer .footer-nav ul li {
+        list-style: none;
+        margin-right: 35px;
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: 400; }
+        .footer .footer-nav ul li a {
+          display: block;
+          text-decoration: none;
+          color: #ffffff;
+          padding-bottom: 10px; }
 
 * {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Proxima Nova Light", sans-serif;
+  font-family: "ProximaNova-Light", sans-serif;
   text-decoration: none !important; }
 
 a > * {
