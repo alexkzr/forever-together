@@ -58,13 +58,12 @@ section
   margin-top: 0
   padding-top: 0
   margin-bottom: 45px
-  width: 46%
   @include mq($until: 460px)
-    width: 95%
-  @include mq($until: 768px)
-    width: 75%
+    width: 95% 
+  @include mq($from: 460px, $until: 768px)
+    width: 75% 
   @include mq($from: 1199px)
-    width: 53%
+    width: 53% 
 .button
   box-shadow: 0 0 27px rgba(250, 122, 149, 0.36)
   background-color: #fa7a95
