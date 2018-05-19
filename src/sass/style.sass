@@ -11,8 +11,8 @@
 @import 'about'
 @import 'contacts'
 @import 'footer'
-.footer
-  display: none
+@import 'modal'
+
 .container
   @include mq($from: 240px, $until: 400px)
     width: 90%
@@ -59,8 +59,12 @@ section
   padding-top: 0
   margin-bottom: 45px
   width: 46%
+  @include mq($until: 460px)
+    width: 95%
   @include mq($until: 768px)
     width: 75%
+  @include mq($from: 1199px)
+    width: 53%
 .button
   box-shadow: 0 0 27px rgba(250, 122, 149, 0.36)
   background-color: #fa7a95

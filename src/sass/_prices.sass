@@ -8,11 +8,32 @@
       align-items: center
       @include mq($until: 992px)
         flex-direction: column
+
+      .price3
+        position: relative
+        @include mq($until: 460px)
+          margin-bottom: 
+        .price-ribbon
+          position: absolute
+          top: 0
+          right: 10px
+          background: url(../img/modal/gold-ribbon.png) no-repeat center
+          background-size: cover
+          width: 34px
+          height: 91px
+          color: #ffffff
+          span  
+            display: block
+            transform: rotate(90deg)
+            padding-top: 10px
+            line-height: 34px
+            padding-bottom: 10px
+            
       .price
         display: flex
         flex-direction: column
         border-radius: 5px
-        width: 30%
+        max-width: 359px
         height: 510px
         border: 1px solid #ebebeb
         @include push--sides(15px)

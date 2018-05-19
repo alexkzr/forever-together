@@ -1,6 +1,8 @@
 .examples
   display: flex
   flex-direction: column
+  @include mq($until: 576px)
+    width: 97%
   .hidden-mobile
     @include mq($until: 992px)
       display: none
@@ -9,7 +11,8 @@
       display: none
     @include mq($from: 991px)
       display: none
-    
+  .examples-text
+    width: 100%
   .examples-cont
     .row
       margin-bottom: 36px
@@ -40,3 +43,5 @@
   left: 0
 .slick-next
   right: 0
+.slick-prev:focus, .slick-next:focus
+  background: $main-pink

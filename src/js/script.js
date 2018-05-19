@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   $(document).ready(function () {
     // Add smooth scrolling to all links
-    $('a').on('click', function (event) {
+    $('a').not('#login').on('click', function (event) {
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== '') {
         // Prevent default anchor click behavior
@@ -24,7 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
       } // End if
     });
   });
-
+  $('.login').click(function () {
+    $('.overlay').show()
+  })
+  $('.overlay').click(function () {
+    $('.overlay').css('display', 'none')
+  })
+  $('.popup-close').click(function () {
+    $('.overlay').css('display', 'none')
+  })
   /*Input mask*/
 
   $("#menu-button").click(function () {

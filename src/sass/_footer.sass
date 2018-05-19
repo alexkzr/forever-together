@@ -21,41 +21,54 @@
   display: flex
   flex-direction: column
   color: #ffffff
-  height: 220px
   width: 100%
   padding: 0
   .footer-bottom
+    font-family: $nova-semibold
     height: 70px
     line-height: 70px
     opacity: 0.5
     color: #ffffff
+    text-align: center
   
 
   .footer-nav
-        display: flex
-        width: 77%
-        height: 170px
-        
-        ul
-          display: flex
-          flex-direction: row
-          justify-content: space-between
-          padding: 0
-          align-items: center
-          margin-bottom: 0
-          li
-            list-style: none
-            margin-right: 35px
-            @include push--ends(auto)
-            font-size: 15px
-            font-weight: 400
-            a
-              display: block
-              text-decoration: none
-              color: #ffffff
-              padding-bottom: 10px
-          .footer-login
-            @include login-button
-        .logo
-          @include logo
-          @include push--ends(auto)
+    display: flex
+    width: 77%
+    height: 150px
+    font-family: $nova-semibold
+    @include mq($until: 1100px)
+      display: none
+    ul
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding: 0
+      align-items: center
+      margin-bottom: 0
+      li
+        list-style: none
+        margin-right: 10px
+        font-family: $nova-semibold
+        @include push--ends(auto)
+        font-size: 15px
+        font-weight: 400
+        @include mq($until: 1200px)
+          margin-right: 10px
+        a
+          display: block
+          text-decoration: none
+          color: #ffffff
+          padding-bottom: 10px
+          font-family: $nova-semibold
+      .footer-login
+        @include login-button
+        margin-left: 20px
+        font-family: $nova-semibold
+    .logo
+      @include logo
+      @include push--ends(auto)
+      margin-right: 50px
+      @include mq($until: 1200px)
+        width: 170px
+        margin-right: 20px
