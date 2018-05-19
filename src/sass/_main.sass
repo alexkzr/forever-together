@@ -25,11 +25,7 @@
     display: none
 .main
   position: relative
-  max-width: 1920px
-  background-repeat: no-repeat 
-  background-position: center
   color: #ffffff
-  background-size: cover
   z-index: 4
   @include mq($until: 992px)
     height: 790px
@@ -40,6 +36,9 @@
     padding-bottom: 0
     background-image: url(../img/main/slide1.png)
     height: 900px
+    background-repeat: no-repeat 
+    background-position: center
+    background-size: cover
     
   #menu
     position: fixed
@@ -207,8 +206,7 @@
   // margin-top: 10px
 .main-bg
   position: absolute
-  max-width: 1920px
-  float: right
+  width: 100%
   background-repeat: no-repeat 
   background-position: center
   color: #ffffff
@@ -225,9 +223,19 @@
     display: none
   @include mq($from: 1200px)
   height: 900px
-  img
-    width: 100%
-    height: 100%
+  div
+    div
+      img
+        @include mq($until: 992px)
+        height: 790px
+        @include mq($until: 576px)
+          height: 690px
+        @include mq($until: 1200px)
+          padding-top: -50px
+          padding-bottom: 0
+          display: none
+        @include mq($from: 1200px)
+          height: 900px
   .slick-list::before
     position: absolute
     top: 0

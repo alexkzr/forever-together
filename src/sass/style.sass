@@ -11,8 +11,11 @@
 @import 'about'
 @import 'contacts'
 @import 'footer'
-.prices, .about, .contacts, .footer
+.footer
   display: none
+.container
+  @include mq($from: 240px, $until: 400px)
+    width: 90%
 *
   margin: 0 auto
   box-sizing: border-box
@@ -56,7 +59,7 @@ section
   padding-top: 0
   margin-bottom: 45px
   width: 46%
-  @include mq($until: 576px)
+  @include mq($until: 768px)
     width: 75%
 .button
   box-shadow: 0 0 27px rgba(250, 122, 149, 0.36)
