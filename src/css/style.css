@@ -78,9 +78,6 @@
   @media (max-width: 62em) {
     .main {
       height: 790px; } }
-  @media (max-width: 36em) {
-    .main {
-      height: 690px; } }
   @media (max-width: 75em) {
     .main {
       padding-top: 50px;
@@ -488,7 +485,7 @@ iframe {
   @media (max-width: 48em) {
     .examples .shown-mobile {
       display: none; } }
-  @media (min-width: 61.9375em) {
+  @media (min-width: 62.0625em) {
     .examples .shown-mobile {
       display: none; } }
   .examples .examples-text {
@@ -504,7 +501,7 @@ iframe {
     .examples .examples-cont .row img {
       width: 330px;
       height: 280px; }
-  @media (min-width: 48em) {
+  @media (min-width: 48.0625em) {
     .examples .examples-slider {
       display: none; } }
   .examples .slick-slider {
@@ -995,9 +992,6 @@ iframe {
           width: 170px;
           margin-right: 20px; } }
 
-#thankyou {
-  display: none; }
-
 .overlay {
   position: fixed;
   display: none;
@@ -1060,7 +1054,7 @@ iframe {
     background-color: #fa7995;
     background-size: cover;
     overflow: hidden; }
-    @media (min-width: 20em) and (max-width: 75em) {
+    @media (min-width: 20em) and (max-width: 62em) {
       .popup-image {
         display: none; } }
     .popup-image img {
@@ -1084,6 +1078,12 @@ iframe {
       display: -ms-flexbox;
       display: flex;
       margin-top: 25px; }
+      @media (max-width: 36em) {
+        .popup-form-container .popup-form__buttons {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; } }
       .popup-form-container .popup-form__buttons .popup-form__button {
         width: 237px;
         margin-top: 0 !important; }
@@ -1101,6 +1101,10 @@ iframe {
         -webkit-box-shadow: none;
         box-shadow: none;
         margin-top: 0; }
+        @media (max-width: 36em) {
+          .popup-form-container .popup-form__buttons .popup-form__button2 {
+            width: 237px;
+            margin-top: 20px; } }
     .popup-form-container .popup-form__inputs {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1143,6 +1147,9 @@ iframe {
       margin-top: 34px;
       margin-bottom: 21px;
       opacity: .5; }
+      @media (max-width: 36em) {
+        .popup-form-container .asterisk {
+          margin-top: 20px; } }
       .popup-form-container .asterisk__name:placeholder, .popup-form-container .asterisk__tel:placeholder, .popup-form-container .asterisk__email:placeholder {
         color: #606060;
         font-family: "Proxima Nova", sans-serif;
@@ -1152,21 +1159,15 @@ iframe {
 
 .overlay::before {
   position: absolute;
-  top: 0;
-  display: block;
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: #2f2f2f;
-  opacity: .4;
-  z-index: -2;
-  background-image: -webkit-gradient(linear, left top, right top, from(#5c7e8e), to(#f7c2cc));
-  background-image: -webkit-linear-gradient(left, #5c7e8e 0%, #f7c2cc 100%);
-  background-image: -o-linear-gradient(left, #5c7e8e 0%, #f7c2cc 100%);
-  background-image: linear-gradient(to right, #5c7e8e 0%, #f7c2cc 100%); }
-  @media (min-width: 75em) {
-    .overlay::before {
-      display: none; } }
+    position-top: 0;
+    position-display: block;
+    position-content: '';
+    position-width: 100%;
+    position-height: 100%;
+    position-background-color: #2f2f2f;
+    position-opacity: .4;
+    position-z-index: -2;
+    position-background-image: linear-gradient(to right, #5c7e8e 0%, #f7c2cc 100%); }
 
 .overlay::after {
   position: absolute;
@@ -1178,9 +1179,58 @@ iframe {
   background-color: #000000;
   opacity: .4;
   z-index: -2; }
-  @media (min-width: 75em) {
-    .overlay::after {
-      display: none; } }
+
+#thankyou .popup-thanks {
+  position: fixed;
+  height: 421px;
+  bottom: 20% !important; }
+
+.popup-close {
+  color: #fff; }
+
+.popup-title {
+  font-family: "Amsdamcyr", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 30px; }
+  .popup-title__font {
+    display: block;
+    margin-top: 50px; }
+
+.popup-overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: #2f2f2f url(../img/modal/modal-bg.png) center no-repeat;
+  background-size: cover; }
+
+.overlay::before {
+  position: absolute;
+    position-top: 0;
+    position-display: block;
+    position-content: '';
+    position-width: 100%;
+    position-height: 100%;
+    position-background-color: #2f2f2f;
+    position-opacity: .4;
+    position-z-index: -2;
+    position-background-image: linear-gradient(to right, #5c7e8e 0%, #f7c2cc 100%); }
+
+.overlay::after {
+  position: absolute;
+  top: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: .4;
+  z-index: -2; }
 
 @media (min-width: 15em) and (max-width: 25em) {
   .container {
