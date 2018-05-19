@@ -24,11 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
       } // End if
     });
   });
-  /*
-   $('.popup-form__input').mask('+7(999)999-9999');
-   $('.production-form__tel').mask('+7(999)999-9999');
-   $('.main-form__tel').mask('+7(999)999-9999');*/
-  /* Feedback slider */
 
   /*Input mask*/
 
@@ -39,4 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     $("#line-3").toggleClass("active");
     $("#menu").slideToggle("slow");
   });
+
+
+
+
 });

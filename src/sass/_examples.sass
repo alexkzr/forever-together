@@ -1,8 +1,37 @@
 .examples
   display: flex
   flex-direction: column
+  .hidden-mobile
+    @include mq($until: 992px)
+      display: none
+  .shown-mobile
+    @include mq($until: 768px)
+      display: none
+    @include mq($from: 991px)
+      display: none
+    
   .examples-cont
     .row
       margin-bottom: 36px
+      .col-6
+        padding: 0
+        margin: 0
+        display: flex
       img
-        @include push--sides(15px)
+        width: 330px
+        height: 280px
+  .examples-slider
+    @include mq($from: 768px)
+      display: none
+
+.slick-prev:active, .slick-next:active
+.slick-prev, .slick-next
+  background: $main-pink
+  z-index: 4
+  height: 50px
+  width: 20px
+  font-size: 20px
+.slick-prev 
+  left: 0
+.slick-next
+  right: 0
