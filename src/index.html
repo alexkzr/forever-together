@@ -93,7 +93,7 @@
               <a href="#contacts">Контакты</a>
             </li>
             <li class="login">
-              <a href="#login" id="login">Войти</a>
+              <a href="#login" class="login">Войти</a>
             </li>
           </ul>
         </nav>
@@ -107,7 +107,7 @@
         <p class="main-content__paragraph2">С Forever Together создать сайт это не проблема. Вы можете быстро и бесплатно создать свадебный сайт и делиться впечатлениями
           с родными друзьями.</p>
         <!-- /.main-content__paragraph2 -->
-        <button class="button button-main">СОЗДАТЬ САЙТ</button>
+        <button class="button button-main enter">СОЗДАТЬ САЙТ</button>
         <!-- /.button -->
         <a href="#video" class="main-content__scroll">
           <img src="img/main/scroll.png" alt="">
@@ -123,11 +123,19 @@
     </div>
     <div class="container">
       <div class="video-content">
-        <img src="img/video/doves.png" alt="" class="video-content__image1">
-        <div class="video-container">
-          <div class="youtube" id="q_th_D4VHC0"></div>
+        <div class="row align-items-start no-gutters">
+          <div class="col d-flex flex-column">
+            <img src=" img/video/doves.png" alt="" class="video-content__image1">
+          </div>
+          <div class="col-md-auto d-flex justify-content-center">
+            <div class="video-container">
+              <div class="youtube" id="q_th_D4VHC0" style="width:655px; height:403px;"></div>
+            </div>
+          </div>
+          <div class="col d-flex flex-column">
+            <img src=" img/video/doves.png" alt="" class="video-content__image2">
+          </div>
         </div>
-        <img src=" img/video/doves.png" alt="" class="video-content__image2">
       </div>
     </div>
   </section>
@@ -268,7 +276,7 @@
         </div>
       </div>
     </div>
-    <button class="button">СОЗДАТЬ СВОЙ САЙТ</button>
+    <button class="button enter">СОЗДАТЬ СВОЙ САЙТ</button>
   </section>
   <section class="prices" id="prices">
     <div class="prices-heading">
@@ -293,7 +301,7 @@
               <li>50 фотографий в альбоме пары</li>
               <li class="price-tag">1 600 рублей</li>
             </ul>
-            <button class="button button-grey order1">Создать сайт за 1600р.
+            <button class="button button-grey order1 order">Создать сайт за 1600р.
               <input type="radio" name="price-choice" class="chosen 1600">
             </button>
           </div>
@@ -312,12 +320,12 @@
               <li class="price-tag">
                 2 500 рублей</li>
             </ul>
-            <button class="button button-blue order2">Создать сайт за 2500р.
+            <button class="button button-blue order2 order">Создать сайт за 2500р.
               <input type="radio" name="price-choice" class="chosen 2500"> </button>
           </div>
           <div class="price price3">
             <div class="price-ribbon">
-              <span>Premium</span>
+              <span>Popular</span>
             </div>
             <div class="price-heading price-heading_gold">Gold</div>
             <ul>
@@ -333,7 +341,7 @@
               <li class="price-tag">
                 4 000 рублей</li>
             </ul>
-            <button class="button button-green order3">Создать сайт за 4000р.
+            <button class="button button-green order3 order">Создать сайт за 4000р.
               <input type="radio" name="price-choice" class="chosen 4000">
             </button>
           </div>
@@ -371,24 +379,19 @@
         <div class="form-container">
           <div class="form-wrapper">
             <div class="name-input">
-              <label for="name">
-                <img src="img/contacts/name.png" alt="Ваше имя"> Ваше имя
-              </label>
-              <input type="text" id="name" name="user_name" required>
+              <input type="text" name="user_name" class="user_name" id="name" required placeholder="Ваше имя">
             </div>
             <p class="asterisk">* Как к вам обращаться?</p>
             <div class="email-input">
-              <label for="email">
-                <img src="img/contacts/email.png" alt="Email"> E-mail
-              </label>
-              <input type="email" id="email" name="user-email" required>
+
+              <input type="email" name="user-email" required id="email" placeholder="E-mail">
             </div>
             <p class="asterisk">* На эту почту вышлем ответ</p>
           </div>
           <div class="textarea-wrap">
             <label for="message">
               <img src="img/contacts/message.png" alt="сообщение"> Сообщение</label>
-            <textarea name="message" id="message" name="user_message" required></textarea>
+            <textarea name="message" name="user_message" required id="message"></textarea>
             <div class="asterisk">* Ваш вопрос или предложение</div>
           </div>
         </div>
@@ -452,11 +455,11 @@
           <a href="#contacts">Контакты</a>
         </li>
         <li class="footer-login login">
-          <a href="#login" id="login">Войти</a>
+          <a href="#login" class="login">Войти</a>
         </li>
       </ul>
     </div>
-    <div class="footer-bottom">&copy; 2018 "Forever Together" Все права защищены</div>
+    <div class="footer-bottom">&copy; 2018"Forever Together" Все права защищены</div>
   </section>
   <!-- Thank you popup -->
   <div class="popup-overlay" id="thankyou">
@@ -488,16 +491,15 @@
           <div class="popup-form__header">Авторизация</div>
           <!-- /.popup-form__header -->
           <div class="popup-form__inputs">
-            <input type="text" class="popup-form__name popup-form-box__name" required name="user_name" id="user_name" placeholder="Ваше имя">
-            <input type="tel" class="popup-form__tel popup-form-box__tel" required name="user_phone" id="user_phone" placeholder="Номер телефона">
-            <input type="email" class="popup-form__email popup-form-o popup-form-box__email" name="user_email" id="user_email" required
-              placeholder="Email">
+            <input type="text" class="popup-form__name popup-form-box__name" required name="user_name" placeholder="Ваше имя">
+            <input type="tel" class="popup-form__tel popup-form-box__tel" required name="user_phone" placeholder="Номер телефона">
+            <input type="email" class="popup-form__email popup-form-o popup-form-box__email" name="user_email" required placeholder="Email">
           </div>
           <!-- /.popup-form-box -->
           <div class="popup-form__buttons">
             <button class="button button-big popup-form__button">Зарегистрироваться</button>
             <!-- /.button button-big popup-form_button -->
-            <button class="button popup-form__button2">Войти</button>
+            <button class="button popup-form__button2 enter">Войти</button>
             <!-- /.button popup-form_button2 -->
           </div>
           <!-- /.popup-form_buttons -->
@@ -519,24 +521,32 @@
       <div class="popup-close">&times;</div>
       <!-- /.popup-close -->
       <div class="popup-form-container">
-        <form action="" class="popup-form">
+        <form action="POST" class="popup-form">
           <div class="popup-form__header">Спасибо за заказ!</div>
           <!-- /.popup-form__header -->
           <div class="popup-form__inputs">
-            <input type="text" class="popup-form__name popup-form-box__name" required name="user_name" id="user_name" placeholder="Ваше имя">
-            <input type="tel" class="popup-form__tel popup-form-box__tel" required name="user_phone" id="user_phone" placeholder="Номер телефона">
+            <input type="text" class="popup-form__name popup-form-box__name" required name="user_name" placeholder="Ваше имя">
+            <input type="tel" class="popup-form__tel popup-form-box__tel" required name="user_phone" placeholder="Номер телефона">
           </div>
           <label for="chooser">Вы выбрали тарифный план:</label>
-          <select class="select" name="price-choice" id="chooser">
-            <option class="basic" value="1600">Basic - 1600р.</option>
-            <option class="silver" value="2500">Silver - 2500р.</option>
-            <option class="gold" value="4000">Gold - 4000р.</option>
-          </select>
+          <!-- <select class="select" name="price-choice" id="chooser">
+            <option class="basic option" value="1600">Basic - 1600р.</option>
+            <option class="silver option" value="2500">Silver - 2500р.</option>
+            <option class="gold option" value="4000">Gold - 4000р.</option>
+          </select> -->
+          <div class="radio" id="chooser">
+            <label for="basic">Basic 1600р.</label>
+            <input type="radio" id="basic" class="option" name="user_price">
+            <label for="silver">Silver 2500р.</label>
+            <input type="radio" id="silver" class="option" name="user_price">
+            <label for="gold">Gold 4000р.</label>
+            <input type="radio" id="gold" class="option" name="user_price">
+          </div>
           <!-- /.popup-form-box -->
           <div class="popup-form__buttons">
-            <button class="button button-big popup-form__button">Заказать</button>
+            <button class="button button-big popup-form__button" type="submit">Заказать</button>
             <!-- /.button button-big popup-form_button -->
-            <button class="button popup-form__button2">Отмена</button>
+            <button class="button popup-form__cancel popup-form__button2">Отмена</button>
             <!-- /.button popup-form_button2 -->
           </div>
           <!-- /.popup-form_buttons -->
@@ -558,7 +568,7 @@
     crossorigin="anonymous"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>
-  <script src="js/youtube.js"></script>
+  <script src="js/youtube1.js"></script>
   <script src="js/script.js"></script>
   <script>
     $('.main-bg').slick({

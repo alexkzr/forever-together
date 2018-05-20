@@ -30,9 +30,9 @@
   @include mq($from: 1200px)
     height: 900px
   @include mq($until: 992px)
-    height: 790px
+    min-height: 790px
+    padding-bottom: 30px !important
   @include mq($until: 1200px)
-    padding-top: 50px
     padding-bottom: 0
     background-image: url(../img/main/slide1.png)
     background-repeat: no-repeat 
@@ -151,8 +151,8 @@
         @include soft--sides(100px)
         @include mq($until: 992px)
           @include soft--sides(20px)
-          font-size: 27px
-          line-height: 40px
+          font-size: 20px
+          line-height: 30px
       .main-content__paragraph1
         margin-bottom: 30px
       .button-main
@@ -197,7 +197,7 @@
   .slick-active
     opacity: 1
 .slick-list, .slick-track
-  height: 100%
+  height: 100% !important
 
 .main-bg
   position: absolute
@@ -215,7 +215,7 @@
     padding-bottom: 0
     display: none
 .slide
-  height: 900px
+  height: 900px !important
   background-size: cover !important
 .slide1
   background: url(../img/main/slide1.png) no-repeat center
@@ -234,7 +234,7 @@
   display: block
   content: ''
   width: 100%
-  height: 99%
+  height: 100%
   background-color: #2f2f2f;
   opacity: .4
   z-index: 1
@@ -245,7 +245,7 @@
   display: block
   content: ''
   width: 100%
-  height: 99%
+  height: 100%
   background-color: #000000;
   opacity: .4
   z-index: 1

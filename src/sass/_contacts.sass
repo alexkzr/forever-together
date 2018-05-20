@@ -48,20 +48,36 @@
       line-height: 24px
       margin-left: 15px
       margin-bottom: 18px
+  #name
+    background: #fff url(../img/modal/name.png) no-repeat
+    background-position: 16px center
+    padding-left: 50px
+    padding-right: 15px
+    height: 53px
+    border-radius: 3px
+    border: 1px solid #ededed
+    outline: none
+  #email
+    background: #fff url(../img/modal/email.png) no-repeat
+    background-position: 16px center
+    padding-left: 50px
+    padding-right: 15px
+    height: 53px
+    border-radius: 3px
+    border: 1px solid #ededed
+    outline: none
   #name, #email
-    width: 200px
+    width: 665px
     height: 50px
     border: 1px solid #ededed
     border-left: 0
-    @include mq($until: 992px)
-      width: 400px
-      margin-right: 0
+    @include mq($until: 1200px)
+      width: 550px      
     @include mq($until: 768px)
-      width: 250px
+      width: 400px
     @include mq($until: 460px)
       width: 250px
       border: 1px solid #ededed
-      border-top: 0
       padding-left: 20px
   .textarea-wrap
     display: flex
@@ -87,6 +103,7 @@
         height: 20px
         width: 20px
         margin: 20px
+        margin-left: 0
       
     textarea
       width: 665px
@@ -94,6 +111,7 @@
       border: 1px solid #ededed
       border-top: 0
       padding-left: 20px
+      resize: none
       @include mq($until: 1200px)
         width: 550px
       @include mq($until: 768px)

@@ -2,6 +2,7 @@
 $email = $_POST['user_email'];
 $name = $_POST['user_name'];
 $message = $_POST['user_message'];
+$price = $_POST['user_price'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -32,6 +33,7 @@ $mail->Body    = '
 	Пользователь оставил свои данные <br> 
 	Имя: ' . $name . ' <br>
 	E-mail: ' . $email . ' <br> 
+	Тариф: ' . $price . ' <br>
 	Сообщение: ' . $message;
 $mail->AltBody = 'Это альтернативный текст';
 
