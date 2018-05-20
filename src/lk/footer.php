@@ -38,6 +38,7 @@
     crossorigin="anonymous"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/script.js"></script>
   <script>
     $("#menu-button").click(function(){
     $(this).toggleClass("active");

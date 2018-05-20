@@ -17,6 +17,70 @@
     box-shadow: 1px 1px 9px 7px rgba(255, 255, 255, 0.25);
     cursor: pointer; } }
 
+.side-menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 160px;
+  background-color: #faf9f9;
+  z-index: 99; }
+  .side-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0; }
+    .side-menu ul .menu-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 160px;
+      height: 100px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: center; }
+      .side-menu ul .menu-item .menu-item_wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 96px;
+        width: 50px;
+        border: 1px solid #333333;
+        background-size: 50%;
+        margin-top: 23px;
+        margin-bottom: 23px;
+        /* margin-left: 50px; */
+        /* margin-right: 50px; */
+        }
+      .side-menu ul .menu-item a {
+        text-decoration: none;
+        color: #333333;
+        text-align: center; }
+        .side-menu ul .menu-item a svg {
+          width: 30px;
+          height: 30px; }
+    .side-menu ul .menu-item:hover {
+      background-color: #f0f0f0;
+      border-left: 2px solid #fa7995; }
+      .side-menu ul .menu-item:hover .menu-item_wrap {
+        background-color: #333333; }
+      .side-menu ul .menu-item:hover .svg path {
+        fill: #ffffff; }
+
 .header::after {
   position: absolute;
   display: block;
