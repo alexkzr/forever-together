@@ -293,7 +293,9 @@
               <li>50 фотографий в альбоме пары</li>
               <li class="price-tag">1 600 рублей</li>
             </ul>
-            <button class="button button-grey">Создать сайт за 1600р.</button>
+            <button class="button button-grey order1">Создать сайт за 1600р.
+              <input type="radio" name="price-choice" class="chosen 1600">
+            </button>
           </div>
           <div class="price price2">
             <div class="price-heading price-heading_silver">Silver</div>
@@ -310,7 +312,8 @@
               <li class="price-tag">
                 2 500 рублей</li>
             </ul>
-            <button class="button button-blue">Создать сайт за 2500р.</button>
+            <button class="button button-blue order2">Создать сайт за 2500р.
+              <input type="radio" name="price-choice" class="chosen 2500"> </button>
           </div>
           <div class="price price3">
             <div class="price-ribbon">
@@ -330,7 +333,9 @@
               <li class="price-tag">
                 4 000 рублей</li>
             </ul>
-            <button class="button button-green">Создать сайт за 4000р.</button>
+            <button class="button button-green order3">Создать сайт за 4000р.
+              <input type="radio" name="price-choice" class="chosen 4000">
+            </button>
           </div>
         </div>
       </div>
@@ -453,6 +458,7 @@
     </div>
     <div class="footer-bottom">&copy; 2018 "Forever Together" Все права защищены</div>
   </section>
+  <!-- Thank you popup -->
   <div class="popup-overlay" id="thankyou">
     <div class="popup popup-thanks">
       <div class="popup-image"></div>
@@ -468,6 +474,9 @@
       </div>
     </div>
   </div>
+  <!-- Thank you popup -->
+
+  <!-- Authorization popup -->
   <div class="overlay">
     <div class="popup">
       <div class="popup-image"></div>
@@ -494,6 +503,43 @@
           <!-- /.popup-form_buttons -->
           <div class="asterisk">Забыли пароль?</div>
           <!-- /.asterisk -->
+        </form>
+        <!-- /.popup-form_form -->
+      </div>
+      <!-- /.popup-form -->
+    </div>
+    <!-- /.popup -->
+  </div>
+  <!-- /.overlay -->
+  <!-- Purchase popup -->
+  <div class="buy-overlay">
+    <div class="popup">
+      <div class="popup-image"></div>
+      <!-- /.popup0image -->
+      <div class="popup-close">&times;</div>
+      <!-- /.popup-close -->
+      <div class="popup-form-container">
+        <form action="" class="popup-form">
+          <div class="popup-form__header">Спасибо за заказ!</div>
+          <!-- /.popup-form__header -->
+          <div class="popup-form__inputs">
+            <input type="text" class="popup-form__name popup-form-box__name" required name="user_name" id="user_name" placeholder="Ваше имя">
+            <input type="tel" class="popup-form__tel popup-form-box__tel" required name="user_phone" id="user_phone" placeholder="Номер телефона">
+          </div>
+          <label for="chooser">Вы выбрали тарифный план:</label>
+          <select class="select" name="price-choice" id="chooser">
+            <option class="basic" value="1600">Basic - 1600р.</option>
+            <option class="silver" value="2500">Silver - 2500р.</option>
+            <option class="gold" value="4000">Gold - 4000р.</option>
+          </select>
+          <!-- /.popup-form-box -->
+          <div class="popup-form__buttons">
+            <button class="button button-big popup-form__button">Заказать</button>
+            <!-- /.button button-big popup-form_button -->
+            <button class="button popup-form__button2">Отмена</button>
+            <!-- /.button popup-form_button2 -->
+          </div>
+          <!-- /.popup-form_buttons -->
         </form>
         <!-- /.popup-form_form -->
       </div>

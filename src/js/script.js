@@ -42,7 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
     $("#line-3").toggleClass("active");
     $("#menu").slideToggle("slow");
   });
+  /*Price choice */
+  const orderButton = document.getElementsByClassName('order');
 
+
+  .addEventListener('click', e => {
+    e.preventDefault();
+
+  })
 
 
 

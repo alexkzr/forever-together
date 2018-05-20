@@ -1,4 +1,4 @@
-.overlay
+.buy-overlay
   position: fixed
   display: none
   top: 0
@@ -74,8 +74,8 @@
           flex-direction: column
         .popup-form__button
           width: 237px
-          text-transform: uppercase
           margin-top: 0 !important
+          text-transform: uppercase
         .popup-form__button2
           width: 129px
           height: 56px
@@ -141,37 +141,24 @@
   @include gradient
 .overlay::after
   @include dark-overlay
-
-#thankyou
-  .popup-thanks
-    position: fixed
-    height: 421px
-    bottom: 20% !important
-.popup-close
-  color: #fff
-.popup-title
-  font-family: $ams
-  font-size: 20px
-  text-align: center
-  margin-top: 30px
-  padding-bottom: 30px
-  &__font
-    display: block
-    margin-top: 50px
-.popup-overlay
-  position: fixed
-  display: none
-  top: 0
-  max-width: 100%
+.select
+  height: 53px
   width: 100%
-  height: 100%
-  z-index: 5
-  background: #2f2f2f url(../img/modal/modal-bg.png) center no-repeat
-  background-size: cover
-.overlay::before
-  @include gradient
-.overlay::after
-  @include dark-overlay
-
-.chosen
-  display: none
+  padding-left: 15px
+  color: #606060
+  font-family: $nova
+  font-size: 15px
+  font-weight: 300
+  line-height: 24px        
+  border-radius: 3px
+  border: 1px solid #ededed
+  outline: none
+  background-color: #faf9f9
+label
+  background-color: #faf9f9
+  padding-left: 15px
+  color: #606060
+  font-family: $nova
+  font-size: 15px
+  font-weight: 300
+  line-height: 24px       
