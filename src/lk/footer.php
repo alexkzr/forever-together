@@ -7,7 +7,7 @@
               </div>
             </a>
           </div>
-          <ul class="col-5">
+          <ul class="col-5 hover">
             <li>
               <a href="#">Мои сайты</a>
             </li>

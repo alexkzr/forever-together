@@ -26,7 +26,7 @@
         <div id="line-3"></div>
       </div>
     <div id="menu">
-      <ul>
+      <ul class="menu-ul">
           <li>
             <a href="#">Мои сайты</a>
           </li>
@@ -50,7 +50,7 @@
           <div class="logo"></div>
           </a>
         </div>
-        <ul class="col-5 mobile-hidden">
+        <ul class="col-5 mobile-hidden hover">
           <li>
             <a href="#">Мои сайты</a>
           </li>

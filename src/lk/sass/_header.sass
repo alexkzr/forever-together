@@ -15,6 +15,24 @@
     display: block
   @include mq($from: 991px)  
     display: none
+#menu ul li
+  @include mq($until: 900px)
+    @include soft--ends(10px)
+#menu .menu-ul
+  @include mq($until: 900px)
+    display: flex
+    flex-direction: column
+    background: rgba(0, 0, 0, .8)
+    @include soft--ends(5px)
+    
+#menu
+  @include mq($until: 900px)
+    width: 100%
+    top: 37px
+    left: 50%
+    transform: translateX(-50%)
+    font-size: 30px
+
 .header
   position: relative
   background: url(../img/footer-bg.png) no-repeat center
@@ -73,12 +91,18 @@
       @include mq($until: 1200px)
         padding: 0
     .header-preview
+      margin-left: -30px
       padding: 5px 30px
       border: 2px solid #fff
+      @include mq($until: 1200px)
+        margin-left: -70px
     .header-publish
+      margin-left: -30px
       width: 183px
       @include soft--ends(5px)
       border: 2px solid $main-pink
       color: $main-pink
+      @include mq($until: 1200px)
+        margin-left: -52px
 
   
