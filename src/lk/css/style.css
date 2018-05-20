@@ -1,0 +1,318 @@
+.header::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-color: #333; }
+
+@media (max-width: 61.9375em) {
+  .mobile-hidden {
+    display: none !important; } }
+
+@media (max-width: 61.9375em) {
+  #menu-button {
+    display: block; } }
+
+#menu-button {
+  display: none; }
+
+.header {
+  position: relative;
+  background: url(../img/footer-bg.png) no-repeat center;
+  width: 100%;
+  height: 59px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px; }
+  .header .lk-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: "Proxima Nova Semibold", sans-serif; }
+    .header .lk-header .col-1 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .header .lk-header ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 0;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 0; }
+      .header .lk-header ul li {
+        list-style: none;
+        margin-right: 10px;
+        font-family: "Proxima Nova Semibold", sans-serif;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 15px;
+        font-weight: 400; }
+        @media (max-width: 75em) {
+          .header .lk-header ul li {
+            margin-right: 10px; } }
+        .header .lk-header ul li a {
+          display: block;
+          text-decoration: none;
+          color: #ffffff;
+          font-family: "Proxima Nova Semibold", sans-serif; }
+    .header .lk-header .logo {
+      margin-top: auto;
+      margin-bottom: auto;
+      background: url(../img/lklogo.png) no-repeat center;
+      background-size: contain;
+      width: 50px;
+      height: 34px; }
+    .header .lk-header .header-button {
+      color: #ffffff;
+      border-radius: 50px;
+      background-color: transparent;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-family: "Proxima Nova Semibold", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px; }
+      @media (max-width: 75em) {
+        .header .lk-header .header-button {
+          padding: 0; } }
+    .header .lk-header .header-preview {
+      padding: 5px 30px;
+      border: 2px solid #fff; }
+    .header .lk-header .header-publish {
+      width: 183px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: 2px solid #fa7995;
+      color: #fa7995; }
+
+.footer::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-color: #333;
+  background-color: #333; }
+
+.footer::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  bottom: 70px; }
+
+.footer {
+  position: relative;
+  background: url(../img/contacts/footer-bg.png) no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #ffffff;
+  width: 100%;
+  padding: 0;
+  background: url(../img/footer-bg.png) no-repeat center; }
+  .footer .lk-footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    font-family: "Proxima Nova Semibold", sans-serif; }
+    @media (max-width: 68.75em) {
+      .footer .lk-footer-nav {
+        display: none; } }
+    .footer .lk-footer-nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 0;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 0; }
+      .footer .lk-footer-nav ul li {
+        list-style: none;
+        margin-right: 10px;
+        font-family: "Proxima Nova Semibold", sans-serif;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 15px;
+        font-weight: 400; }
+        @media (max-width: 75em) {
+          .footer .lk-footer-nav ul li {
+            margin-right: 10px; } }
+        .footer .lk-footer-nav ul li a {
+          display: block;
+          text-decoration: none;
+          color: #ffffff;
+          padding-bottom: 10px;
+          font-family: "Proxima Nova Semibold", sans-serif; }
+    .footer .lk-footer-nav .footer-lk-login {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 109px;
+      height: 40px;
+      border: 1px solid #ffffff;
+      border-radius: 50px;
+      font-family: "Proxima Nova Semibold", sans-serif;
+      text-align: center;
+      text-decoration: none;
+      line-height: 40px; }
+      .footer .lk-footer-nav .footer-lk-login a {
+        color: #ffffff; }
+    .footer .lk-footer-nav .logo {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 50px;
+      background: url(../img/footer-logo.png) no-repeat center;
+      background-size: contain;
+      width: 210px;
+      height: 35px;
+      margin-right: 100px; }
+      @media (max-width: 75em) {
+        .footer .lk-footer-nav .logo {
+          width: 170px;
+          margin-right: 20px; } }
+  .footer .footer-bottom {
+    font-family: "Proxima Nova Semibold", sans-serif;
+    height: 70px;
+    line-height: 70px;
+    opacity: 0.5;
+    color: #ffffff;
+    text-align: center; }
+
+@media (min-width: 15em) and (max-width: 25em) {
+  .container {
+    width: 90%; } }
+
+* {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "ProximaNova-Light", sans-serif;
+  text-decoration: none !important; }
+
+a > * {
+  text-decoration: none !important;
+  color: #484848;
+  display: block; }
+
+button:focus, input:focus, textarea:focus {
+  outline: none; }
+
+img {
+  max-width: 100%; }
+
+section {
+  padding-bottom: 70px;
+  padding-top: 70px; }
+
+.section-heading {
+  color: #333333;
+  font-family: "Amsdamcyr", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center; }
+  @media (max-width: 36em) {
+    .section-heading {
+      font-size: 24px; } }
+
+.section-heading::after {
+  display: block;
+  content: '';
+  width: 110px;
+  height: 1px;
+  background-color: #fa7995;
+  text-align: center;
+  margin-bottom: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.section-text {
+  color: #484848;
+  font-family: "Proxima Nova", sans-serif;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 45px;
+  width: 46%; }
+  @media (max-width: 28.75em) {
+    .section-text {
+      width: 95%; } }
+  @media (min-width: 28.75em) and (max-width: 48em) {
+    .section-text {
+      width: 75%; } }
+  @media (min-width: 74.9375em) {
+    .section-text {
+      width: 53%; } }
+
+.button {
+  -webkit-box-shadow: 0 0 27px rgba(250, 122, 149, 0.36);
+  box-shadow: 0 0 27px rgba(250, 122, 149, 0.36);
+  background-color: #fa7a95;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  width: 222px;
+  height: 56px;
+  line-height: 56px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto; }

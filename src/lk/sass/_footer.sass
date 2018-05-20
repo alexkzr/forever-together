@@ -1,0 +1,72 @@
+.footer::after
+  @include footer-after
+  background-color: #333
+.footer::before
+  @include footer-before
+.footer
+  @include footer
+  background: url(../img/footer-bg.png) no-repeat center
+
+  .lk-footer-nav
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 100%
+    height: 150px
+    font-family: $nova-semibold
+    @include mq($until: 1100px)
+      display: none
+    ul
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding: 0
+      align-items: center
+      margin-bottom: 0
+
+      li
+        list-style: none
+        margin-right: 10px
+        font-family: $nova-semibold
+        @include push--ends(auto)
+        font-size: 15px
+        font-weight: 400
+        @include mq($until: 1200px)
+          margin-right: 10px
+        a
+          display: block
+          text-decoration: none
+          color: #ffffff
+          padding-bottom: 10px
+          font-family: $nova-semibold
+    .footer-lk-login
+      display: flex
+      width: 109px
+      height: 40px
+      border: 1px solid #ffffff
+      border-radius: 50px
+      font-family: $nova-semibold
+      text-align: center
+      text-decoration: none
+      line-height: 40px
+      a
+        color: #ffffff
+
+    .logo
+      @include push--ends(auto)
+      margin-right: 50px
+      background: url(../img/footer-logo.png) no-repeat center
+      background-size: contain
+      width: 210px
+      height: 35px
+      margin-right: 100px
+      @include mq($until: 1200px)
+        width: 170px
+        margin-right: 20px
+  .footer-bottom
+    font-family: $nova-semibold
+    height: 70px
+    line-height: 70px
+    opacity: 0.5
+    color: #ffffff
+    text-align: center

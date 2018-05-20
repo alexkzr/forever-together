@@ -1,0 +1,66 @@
+#menu-button {
+  position: fixed;
+  background: transparent;
+  width: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all linear .3s;
+  padding: 2px;
+  z-index: 1;
+  margin: 0;
+  left: 200px;
+  top: 5px;
+}
+
+#menu-button.active {
+  background: transparent;
+}
+
+#line-1,
+#line-2,
+#line-3 {
+  width: 60%;
+  background: #fa7995;
+  height: 3px;
+  margin: 8px auto;
+  border-radius: 2px;
+  transition: all linear .3s;
+}
+
+#line-1.active {
+  -webkit-transform: translate(0px, 12px) rotate(45deg);
+  transform: translate(0px, 12px) rotate(45deg);
+}
+
+#line-2.active {
+  opacity: 0;
+}
+
+#line-3.active {
+  -webkit-transform: translate(0px, -12px) rotate(-45deg);
+  transform: translate(0px, -12px) rotate(-45deg);
+}
+
+#menu {
+  background: #333;
+  width: 500px;
+  padding-top: 22px;
+  color: #fff;
+  font-family: arial;
+  font-size: 1.5rem;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  border-radius: 5px;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex
+}
+
+#menu ul li {
+  margin: 3px 8px;
+  display: inline-block
+}

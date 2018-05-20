@@ -10,7 +10,7 @@ var plumber = require('gulp-plumber');
 // Static Server + watching scss/html files
 gulp.task("serve", function () {
   browserSync.init({
-    proxy: "forto:8888"
+    proxy: "forto:8888/lk/cabinet.php"
   });
 
   gulp.watch("lk/sass/**/*.sass", ["sass"]).on("change", browserSync.reload);
