@@ -1,0 +1,41 @@
+.section-image__container
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  border: 1px solid #ebebeb
+  height: 270px
+  @include mq($from: 1200px)
+    width: 360px
+  @include mq($until: 1200px)
+    max-width: 360px
+    height: auto
+  @include mq($from: 992px)
+    margin: 14px 30px
+  .section-image
+    @include mq($from: 576px)
+      height: 200px
+    margin-bottom: 0
+  .bg-choose
+    width: 116px
+    height: 40px
+    border: 1px solid #333333
+    background-color: #ffffff
+    color: #333333
+    font-family: $nova
+    font-size: 14px
+    font-weight: 400
+    line-height: 24px
+    border-radius: 50px
+    text-align: center
+    margin-bottom: 13px
+    @include mq($until: 1200px)
+      margin-top: 13px
+
+.container
+  @include mq($until: 992px)
+    max-width: 760px
+.background
+  .background-text
+    .section-text
+      width: 100% 

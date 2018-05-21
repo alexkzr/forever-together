@@ -2,9 +2,12 @@
 @import 'mixin'
 @import 'variables'
 @import 'hover'
+@import url('../fonts/Museo.otf?family=Museo:400')
 @import 'menu'
 @import 'header'
 @import 'footer'
+@import 'page1'
+@import 'page2'
 
 .container
   @include mq($from: 240px, $until: 400px)
@@ -42,7 +45,7 @@ section
   text-align: center
   margin-bottom: 140px
   @include push--sides(auto)
-  @include push--ends(25px)
+  @include push--ends(24px)
 
 .section-text
   color: $font

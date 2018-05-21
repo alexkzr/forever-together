@@ -1,0 +1,24 @@
+.about
+  .about-content_wrapper
+    display: flex
+    justify-content: space-around
+    img
+      @include mq($until: 992px)
+        display: none
+    .about-content
+      margin-top: 90px
+      max-width: 780px
+ 
+      .about-text__heading
+        color: #333333
+        font-family: $nova-bold
+        font-weight: 300
+        line-height: 18px
+      .heading2
+        margin-top: 50px
+      .about-text__text
+        color: #484848
+        font-size: 16px
+        font-family: $nova
+        @include mq($until: 991px)
+          text-align: justify

@@ -1,0 +1,177 @@
+.overlay
+  position: fixed
+  display: none
+  top: 0
+  max-width: 100%
+  width: 100%
+  height: 100%
+  z-index: 5
+  background: #2f2f2f url(../img/modal/modal-bg.png) center no-repeat
+  background-size: cover
+.popup
+  position: absolute
+  display: flex
+  left: 50%
+  top: 20%
+  max-width: 752px
+  width: 100%
+  transform: translateX(-50%)
+  background-color: #faf9f9
+  z-index: 9
+  @include mq($from: 320px, $until: 576px)
+    max-width: 290px
+  @include mq($from: 576px, $until: 768px)
+    max-width: 430px
+  @include mq($from: 768px, $until: 992px)
+    max-width: 432px
+  @include mq($from: 992px, $until: 1200px)
+    width: 100%
+    top: 8%
+    justify-content: center
+
+  &-close
+    position: absolute
+    top: -30px
+    right: -20px
+    font-size: 35px
+    color: #ffffff
+    font-weight: 300
+    cursor: pointer
+    @include mq($from: 320px, $until: 576px)
+        right: -10px
+  &-image
+    display: block
+    max-width: 321px
+    width: 100%
+    height: 421px
+    margin: 0
+    background: url(../img/modal/popup-side.png) no-repeat center
+    background-color: $main-pink
+    background-size: cover
+    overflow: hidden
+    @include mq($from: 320px, $until: 992px)
+        display: none
+    img
+        max-width: 321px
+        width: 100%
+        @include mq($from: 320px, $until: 1200px)
+            display: none
+  &-form-container
+    margin-left: 25px
+    margin-right: 25px
+    width: 100%
+    .popup-form
+      &__header
+        font-family: $ams
+        font-size: 24px
+        margin: 34px 0 20px 24px  
+        font-weight: bold
+        line-height: 30px
+      &__buttons
+        display: flex
+        margin-top: 25px
+        @include mq($until: 576px)
+          flex-direction: column
+        .popup-form__button
+          width: 237px
+          text-transform: uppercase
+          margin-top: 0 !important
+        .popup-form__button2
+          width: 129px
+          height: 56px
+          border: 1px solid #333333
+          background-color: #faf9f9
+          color: #333333
+          font-family: $nova-semibold
+          font-size: 15px
+          font-weight: 400
+          line-height: 23.4px
+          text-transform: uppercase
+          box-shadow: none
+          margin-top: 0
+          @include mq($until: 576px)
+            width: 237px
+            margin-top: 20px
+      &__inputs
+        display: flex
+        flex-direction: column
+      &__name
+        background: url(../img/modal/name.png) no-repeat
+        background-position: 16px center
+        padding-left: 50px
+        padding-right: 15px
+        height: 53px
+        border-radius: 3px
+        border: 1px solid #ededed
+        outline: none
+      &__tel
+        background: url(../img/modal/tel.png) no-repeat
+        background-position: 16px center
+        padding-left: 50px
+        padding-right: 15px
+        height: 53px
+        border-radius: 3px
+        border: 1px solid #ededed
+        outline: none
+        margin-top: 9px
+        margin-bottom: 9px
+      &__email
+        background: url(../img/modal/email.png) no-repeat
+        background-position: 16px center
+        padding-left: 50px
+        padding-right: 15px
+        height: 53px
+        border-radius: 3px
+        border: 1px solid #ededed
+        outline: none
+    .asterisk
+      text-align: center
+      margin-top: 34px
+      margin-bottom: 21px
+      opacity: .5
+      @include mq($until: 576px)
+        margin-top: 20px
+      &__name:placeholder, &__tel:placeholder, &__email:placeholder
+        color: #606060
+        font-family: $nova
+        font-size: 15px
+        font-weight: 300
+        line-height: 24px
+.overlay::before
+  @include gradient
+.overlay::after
+  @include dark-overlay
+
+#thankyou
+  .popup-thanks
+    position: fixed
+    height: 421px
+    bottom: 20% !important
+.popup-close
+  color: #fff
+.popup-title
+  font-family: $ams
+  font-size: 20px
+  text-align: center
+  margin-top: 30px
+  padding-bottom: 30px
+  &__font
+    display: block
+    margin-top: 50px
+.popup-overlay
+  position: fixed
+  display: none
+  top: 0
+  max-width: 100%
+  width: 100%
+  height: 100%
+  z-index: 5
+  background: #2f2f2f url(../img/modal/modal-bg.png) center no-repeat
+  background-size: cover
+.overlay::before
+  @include gradient
+.overlay::after
+  @include dark-overlay
+
+.chosen
+  display: none

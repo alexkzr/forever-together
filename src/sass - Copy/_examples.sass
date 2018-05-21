@@ -1,0 +1,47 @@
+.examples
+  display: flex
+  flex-direction: column
+  @include mq($until: 576px)
+    width: 97%
+  .hidden-mobile
+    @include mq($until: 992px)
+      display: none
+  .shown-mobile
+    @include mq($until: 768px)
+      display: none
+    @include mq($from: 993px)
+      display: none
+  .examples-text
+    width: 100%
+  .examples-cont
+    .row
+      margin-bottom: 36px
+      .col-6
+        padding: 0
+        margin: 0
+        display: flex
+      img
+        width: 330px
+        height: 280px
+  .examples-slider
+    @include mq($from: 769px)
+      display: none
+  .slick-slider
+    width: 90%
+// .slick-slide:not(.slick-active)
+//   display: none
+// .slick-current
+//   display: block
+.slick-prev:active, .slick-next:active
+.slick-prev, .slick-next
+  background: $main-pink
+  z-index: 4
+  height: 50px
+  width: 20px
+  font-size: 20px
+.slick-prev 
+  left: 0
+.slick-next
+  right: 0
+.slick-prev:focus, .slick-next:focus
+  background: $main-pink

@@ -4,14 +4,19 @@ $green: #70cc83;
 $grey: #7c7c7c;
 $font: #484848;
 $font-scnd: #333333;
-$ams: 'Amsdamcyr',
-sans-serif;
-$nova: 'Proxima Nova',
-sans-serif;
-$nova-bold: 'Proxima Nova Bold',
-sans-serif;
-$nova-light: 'ProximaNova-Light',
-sans-serif;
-$nova-semibold: 'Proxima Nova Semibold',
-sans-serif;
-$mq-breakpoints: (240px: 240px, 320px: 320px, 576px: 576px, 720px: 720px, 845px: 845px, 992px: 992px, 1200px: 1200px, 1400px: 1400px);
+$museo: 'Museo', sans-serif;
+$ams: 'Amsdamcyr', sans-serif;
+$nova: 'Proxima Nova', sans-serif;
+$nova-bold: 'Proxima Nova Bold', sans-serif;
+$nova-light: 'ProximaNova-Light', sans-serif;
+$nova-semibold: 'Proxima Nova Semibold', sans-serif;
+$mq-breakpoints: (
+  240px: 240px,
+  320px: 320px,
+  576px: 576px,
+  720px: 720px,
+  845px: 845px,
+  992px: 992px,
+  1200px: 1200px,
+  1400px: 1400px
+);

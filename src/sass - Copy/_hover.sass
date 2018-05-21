@@ -1,0 +1,36 @@
+@media (min-width: 992px)
+  .main
+    .container
+      .header
+        .logo
+        nav
+          ul
+            li:not(.login):hover::after
+              width: 100%
+            li::after
+              content: ''
+              display: block
+              width: 0
+              height: 2px
+              background: $main-pink
+              transition: width .3s
+
+            
+  .button:hover, .login:hover
+    box-shadow: 0 0 35px rgba(250, 122, 170, 0.7)
+    background-color: lighten($main-pink, 5)
+  .tool:hover
+    transition: all .3s ease
+    box-shadow: 0px 0px 29px 3px rgba(250, 122, 149, 0.51) 
+    -webkit-box-shadow: 0px 0px 29px 3px rgba(250, 122, 149, 0.51) 
+    -moz-box-shadow: 0px 0px 29px 3px rgba(250, 122, 149, 0.51) 
+    border-radius: 20px
+  .button-blue:hover
+    box-shadow: none !important
+    background-color: lighten(#69c2f5, 5) !important
+  .button-green:hover
+    box-shadow: none !important
+    background-color: lighten(#70cb83, 5) !important
+  .button-grey:hover
+    box-shadow: none !important
+    background-color: lighten(#7c7c7c, 5) !important

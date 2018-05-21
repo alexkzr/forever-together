@@ -1,0 +1,174 @@
+.contacts
+  background-color: #faf9f9
+  min-height: 780px
+  .form-container
+    display: flex
+    @include mq($until: 992px)
+      flex-direction: column
+  form
+    display: flex
+    flex-direction: column
+    .name-input, .email-input
+      display: flex
+      margin-right: 25px
+      @include mq($until: 992px)
+        margin-right: 0
+      @include mq($until: 460px)
+        flex-direction: column
+      label
+        display: flex
+        background: #fff
+        border: 1px solid #ededed
+        border-right: 0
+        width: 150px
+        height: 50px
+        line-height: 50px
+        padding-right: 15px
+        font-size: 15px
+        font-weight: 300
+        font-family: $nova-light
+        @include mq($until: 460px)
+          width: 250px
+          margin-bottom: 0
+          border: 1px solid #ededed
+          border-bottom: 0
+          padding-right: 0
+        img
+          height: 20px
+          width: 20px
+          margin: 15px
+    .form-wrapper
+      display: flex
+      flex-direction: column
+    .asterisk
+      opacity: 0.6
+      color: #606060
+      font-size: 14px
+      font-weight: 300
+      line-height: 24px
+      margin-left: 15px
+      margin-bottom: 18px
+  #name
+    background: #fff url(../img/modal/name.png) no-repeat
+    background-position: 16px center
+    padding-left: 50px
+    padding-right: 15px
+    height: 53px
+    border-radius: 3px
+    border: 1px solid #ededed
+    outline: none
+  #email
+    background: #fff url(../img/modal/email.png) no-repeat
+    background-position: 16px center
+    padding-left: 50px
+    padding-right: 15px
+    height: 53px
+    border-radius: 3px
+    border: 1px solid #ededed
+    outline: none
+  #name, #email
+    width: 665px
+    height: 50px
+    border: 1px solid #ededed
+    border-left: 0
+    @include mq($until: 1200px)
+      width: 550px      
+    @include mq($until: 768px)
+      width: 400px
+    @include mq($until: 460px)
+      width: 250px
+      border: 1px solid #ededed
+      padding-left: 20px
+  .textarea-wrap
+    display: flex
+    flex-direction: column
+    label
+      width: 665px
+      height: 50px
+      background: #ffffff
+      border: 1px solid #ededed
+      border-bottom: 0
+      text-align: left
+      margin-bottom: 0
+      font-size: 15px
+      font-weight: 300
+      font-family: $nova-light
+      @include mq($until: 1200px)
+        width: 550px      
+      @include mq($until: 768px)
+        width: 400px
+      @include mq($until: 460px)
+        width: 250px
+      img
+        height: 20px
+        width: 20px
+        margin: 20px
+        margin-left: 0
+      
+    textarea
+      width: 665px
+      height: 100px
+      border: 1px solid #ededed
+      border-top: 0
+      padding-left: 20px
+      resize: none
+      @include mq($until: 1200px)
+        width: 550px
+      @include mq($until: 768px)
+        width: 400px
+      @include mq($until: 460px)
+        width: 250px
+  .submit-button
+    margin-bottom: 50px
+    @include mq($until: 992px)
+      margin-top: 20px
+      
+  .social
+    @include push--sides(auto)
+  .social-heading
+    text-align: center
+    font-family: $nova-bold
+    font-size: 21px
+    font-weight: 200
+    line-height: 20.99px
+    margin-bottom: 30px
+  .social-links__hidden
+    @include mq($until: 1200px)
+      display: none
+    display: flex
+    .fb 
+      background: #21579f
+    .vk
+      background: #4c77a4
+    .ok
+      background: #f68529
+    .inst
+      background: #943ba7
+    .yout
+      background: #e61f19
+    .fb, .vk, .inst, .ok, .yout
+      color: #ffffff
+      display: flex
+      padding: 3px
+      border-radius: 5px
+      line-height: 50px
+      padding-right: 23px
+    img
+      padding: 0
+      padding: 9px
+      border-right: 1px solid rgba(255, 255, 255, .4)
+      margin-right: 17px
+.mobile-hidden
+  @include mq($until: 1200px)
+    display: none
+.social-links__shown
+  display: flex
+  @include mq($from: 1201px)
+    display: none
+  .fb, .vk, .inst, .ok, .yout
+    width: 40px
+    height: 40px
+  
+    
+
+

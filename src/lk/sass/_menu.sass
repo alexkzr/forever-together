@@ -6,10 +6,17 @@
   width: 160px
   background-color: #faf9f9
   z-index: 99
+  @include mq($until: 1385px)
+    width: 70px
+  @include mq($until: 1050px)
+    display: none
+    
   ul
     display: flex
     flex-direction: column
     padding: 0
+    @include mq($until: 1385px)
+      width: 70px
     .menu-item
       display: flex
       flex-direction: column
@@ -17,32 +24,41 @@
       width: 160px
       height: 100px
       padding: 0
-      margin: 0
+      margin: 0 
       list-style: none
       text-align: center
-      .menu-item_wrap
-        display: flex
-        height: 50px
-        width: 50px
-        border: 1px solid #333333
-        background-size: 50%
-        @include push--ends(23px)
-        @include push--sides(50px)
+      @include mq($until: 1385px)
+        width: 70px
       a
+        display: block
         text-decoration: none
-        // font-size: 13px
-        // font-weight: 300
-        // line-height: 15px
-        color: #333333
-        text-align: center
-        svg
-          width: 30px
-          height: 30px
+        .menu-item__image
+          @include push--ends(23px)
+          svg
+            width: 30px
+            height: 30px
+.menu-item__wrap
+  display: flex 
+  flex-direction: column
+  justify-content: center
+  height: 50px
+  width: 50px
+  border: 1px solid #333333
+  background-size: 50%
+  // font-size: 13px
+  // font-weight: 300
+  // line-height: 15px
+  color: #333333
+  text-align: 
         
-    .menu-item:hover
-      background-color: #f0f0f0
-      border-left: 2px solid $main-pink
-      .menu-item_wrap
-        background-color: #333333
-      .svg path
-        fill: #ffffff
+.menu-item:hover
+  background-color: #f0f0f0
+  border-left: 2px solid $main-pink
+  .menu-item__wrap
+    background-color: #333333
+  .svg path
+    fill: #ffffff
+
+.hidden-mobile
+  @include mq($until: 1385px)
+    display: none

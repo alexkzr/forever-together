@@ -5,6 +5,11 @@
   src: url('../fonts/Amsdam.ttf');
   font-style: normal;
 }
+@font-face {
+  font-family: 'Museo';
+  src: url('../fonts/Museo.otf');
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Proxima Nova';
